@@ -8,6 +8,7 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{xcolor}
+\usepackage{graphicx}
 
 \hypersetup{
   colorlinks=true,
@@ -55,6 +56,18 @@ For builders, it means product architecture should support not just features, bu
 For project managers, it means the roadmap should be informed not only by raw feedback or analytics, but by increasingly structured, contestable, and high-value feedback.
 
 For investors, it means product quality can be understood as a compounding capability rather than a static artifact. The strongest products are not just good. They are good at learning why they are not good enough yet.
+
+\begin{figure}[t]
+\centering
+\IfFileExists{figures/traditional_vs_speedrunning_development_approaches.png}{%
+  \includegraphics[width=\textwidth]{figures/traditional_vs_speedrunning_development_approaches.png}
+}{%
+  \fbox{\parbox{0.95\textwidth}{\centering
+  Figure placeholder: add \texttt{figures/traditional\_vs\_speedrunning\_development\_approaches.png} to render the selected comparison diagram in the canonical PDF.}}
+}
+\caption{Traditional product loops optimize within blunt proxy systems; Speedrunning Social Development adds structured user signal, contributor development, leaderboard critique, and glitch/tool discovery to produce a higher-signal, self-correcting learning system.}
+\label{fig:traditional-vs-ssd}
+\end{figure}
 
 \section{The Intended Value: User-Satisfaction}
 
