@@ -1,6 +1,6 @@
 # Speedrunning Social Development
 
-Paper draft and release scaffold for **Speedrunning Social Development: How We Can Improve How We Improve**.
+Paper repository for **Speedrunning Social Development: How We Can Improve How We Improve**.
 
 ## Core claim
 
@@ -23,7 +23,6 @@ This repo proposes a framework for meta-improvement of digital platforms through
 ## Files
 
 - `paper.tex` - primary LaTeX source for the paper
-- `paper.md` - markdown draft / working prose layer
 - `REQUEST_FOR_CRITIQUE.md` - the strongest questions to attack
 - `CITATION.cff` - GitHub citation metadata
 - `.zenodo.json` - Zenodo metadata scaffold
@@ -31,17 +30,16 @@ This repo proposes a framework for meta-improvement of digital platforms through
 
 ## Workflow
 
-The intended long-term workflow is:
+This repo is now **TeX-first**:
 
-1. write and tighten the argument in `paper.md`
-2. maintain the release-ready source in `paper.tex`
-3. compile PDF from `paper.tex`
-4. tag a GitHub release for Zenodo DOI minting
-5. keep the repo arXiv-friendly by treating TeX as the primary publication source
+1. maintain the canonical paper source in `paper.tex`
+2. compile the PDF from `paper.tex`
+3. tag a GitHub release for Zenodo DOI minting
+4. keep the repo arXiv-friendly by treating TeX as the publication source of truth
 
 ## Suggested next steps
 
-1. Compile `paper.tex` to a polished PDF.
+1. Compile `paper.tex` to the canonical PDF.
 2. Add one diagram for the Human/Tool x Compliant/Adversarial hypertopology.
 3. Create a tagged release for Zenodo DOI minting.
 4. Post with the actual paper title and invite hard critique.
