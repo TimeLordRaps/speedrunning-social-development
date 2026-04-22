@@ -22,15 +22,26 @@ This repo proposes a framework for meta-improvement of digital platforms through
 
 ## Files
 
-- `paper.md` - current paper draft
+- `paper.tex` - primary LaTeX source for the paper
+- `paper.md` - markdown draft / working prose layer
 - `REQUEST_FOR_CRITIQUE.md` - the strongest questions to attack
 - `CITATION.cff` - GitHub citation metadata
 - `.zenodo.json` - Zenodo metadata scaffold
 - `LICENSE` - Apache License 2.0
 
+## Workflow
+
+The intended long-term workflow is:
+
+1. write and tighten the argument in `paper.md`
+2. maintain the release-ready source in `paper.tex`
+3. compile PDF from `paper.tex`
+4. tag a GitHub release for Zenodo DOI minting
+5. keep the repo arXiv-friendly by treating TeX as the primary publication source
+
 ## Suggested next steps
 
-1. Export `paper.md` to a polished PDF.
-2. Create a tagged release for Zenodo DOI minting.
-3. Add one diagram for the Human/Tool x Compliant/Adversarial hypertopology.
+1. Compile `paper.tex` to a polished PDF.
+2. Add one diagram for the Human/Tool x Compliant/Adversarial hypertopology.
+3. Create a tagged release for Zenodo DOI minting.
 4. Post with the actual paper title and invite hard critique.
