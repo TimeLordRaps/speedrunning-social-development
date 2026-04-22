@@ -22,16 +22,15 @@ This repo proposes a framework for meta-improvement of digital platforms through
 
 ## Files
 
-- `paper.md` — current paper draft
-- `REQUEST_FOR_CRITIQUE.md` — the strongest questions to attack
-- `HACKERNEWS_POST.md` — launch draft
-- `CITATION.cff` — GitHub citation metadata
-- `.zenodo.json` — Zenodo metadata scaffold
-- `LICENSE_PENDING.md` — placeholder until final license choice
+- `paper.md` - current paper draft
+- `REQUEST_FOR_CRITIQUE.md` - the strongest questions to attack
+- `CITATION.cff` - GitHub citation metadata
+- `.zenodo.json` - Zenodo metadata scaffold
+- `LICENSE` - Apache License 2.0
 
 ## Suggested next steps
 
-1. Convert `paper.md` into a polished PDF.
+1. Export `paper.md` to a polished PDF.
 2. Create a tagged release for Zenodo DOI minting.
 3. Add one diagram for the Human/Tool x Compliant/Adversarial hypertopology.
 4. Post with the actual paper title and invite hard critique.
