@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Speedrunning Social Development: How We Can Improve How We Improve"
+message: "If you use this work, please cite it using the metadata in this file."
+type: article
+authors:
+  - family-names: Roost
+    given-names: Tyler
+    alias: TimeLordRaps
+title-short: "Speedrunning Social Development"
+abstract: "A framework for meta-improvement of digital platforms through a user-satisfaction hyper-objective, contributor incentives, leaderboard feedback, glitch-hunting, and a four-part hypertopology of learning."
+keywords:
+  - platform design
+  - user satisfaction
+  - speedrunning
+  - incentive design
+  - meta-improvement
+  - leaderboard design
+  - social development
+license: "License pending"
