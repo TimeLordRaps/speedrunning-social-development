@@ -2,152 +2,203 @@
 
 ## Abstract
 
-Human lives improve partly through the quality of their social experiences. In the digital era, those experiences are increasingly mediated by platforms: social media, chatbots, video games, communication systems, video and streaming sites, collaborative tools, and the wider software surfaces through which people speak, learn, organize, create, and belong. When these systems degrade, human development degrades with them. When they improve, human development can improve in turn. The central claim of this paper is that digital infrastructure is not primarily corrupt because humans are uniquely perverse, irrational, or unworthy of better systems. It is corrupt because the systems themselves were not designed to learn how to become better at becoming better.
+Digital platforms shape an increasing share of human social development: how people communicate, learn, coordinate, create, belong, and build identity. Yet most platforms are still optimized through blunt proxies such as engagement, retention, conversion, and monetization. Those metrics can be useful, but they do not reliably tell a platform how to become better at becoming better. They help a system extract value. They do not necessarily help it learn.
 
-This paper proposes a framework for meta-improvement of digital platforms through a speedrunning-inspired model of social development. The core idea is simple: a platform should not only optimize user-facing experiences, but also optimize its own ability to discover how those experiences fail, how they can be improved, and how communities of users can participate in that improvement without being exploited. The resulting architecture combines a user-satisfaction hyper-objective, structured ratings and feedback, layered incentive design, contributor development, leaderboard feedback, glitch-hunting subcultures, and a four-part hypertopology of learning regimes: Human-Compliant, Human-Adversarial, Tool-Compliant, and Tool-Adversarial.
+This paper proposes a framework for **meta-improvement** of digital products and digital social infrastructure. The core claim is that platforms should not only optimize user-facing experiences; they should also optimize the mechanisms by which they discover failure, absorb criticism, reward valuable contributors, and redesign their own metrics and ranking systems. The framework combines a user-satisfaction hyper-objective, structured rating-plus-feedback loops, layered contributor incentives, leaderboard critique, glitch-hunting subcultures, and a four-part hypertopology of learning: **Human-Compliant, Human-Adversarial, Tool-Compliant, and Tool-Adversarial**.
+
+The comparison point is speedrunning. Long-lived speedrunning communities are resilient because they know how to metabolize breakage. A new exploit does not automatically destroy the scene. It often creates new categories, new routes, new verification norms, and deeper collective understanding. This paper argues that digital platforms should do the same. For builders, this means more robust product learning. For project managers, it means a cleaner loop from user signal to roadmap decisions. For investors, it means a stronger theory of compounding product quality and lower epistemic risk in product development.
 
 ## 1. Introduction
 
-Much of modern life is now platform-mediated. People increasingly develop friendships, identities, skills, communities, beliefs, livelihoods, and social norms through digital infrastructure. If this infrastructure is optimized badly, then the social experience of millions of people is shaped by systems that reward compulsion, opacity, performative status, shallow engagement, and proxy-maximization rather than understanding, usefulness, growth, and mutual legibility.
+The digital systems through which people live increasingly function as developmental environments. A social network, chatbot, game, productivity tool, streaming platform, or communication surface is not just software. It is part of the social environment in which people form habits, relationships, identities, skills, expectations, and beliefs about what is possible.
 
-The usual explanation for platform failure is anthropological pessimism: people are tribal, impulsive, egoic, distracted, status-hungry, and vulnerable to manipulation, so platforms inevitably decay into mirrors of these traits. This view contains some truth but misses the deeper issue. Most platforms do not meaningfully know how to improve themselves beyond crude feedback loops such as engagement, churn reduction, conversion, ad extraction, or vague user surveys. They are often optimized to survive, expand, and monetize, not to learn how to become better environments for human development.
+If these environments are optimized badly, millions of people experience shallow, manipulative, or confusing systems as normal. If they are optimized well, the quality of social life can improve at scale.
 
-This paper rejects the assumption that the current state of digital social infrastructure is inevitable. Instead, it proposes that platform design should be treated as a meta-learning problem. A system should be able to learn not only whether users are satisfied, but why they are satisfied, why they are dissatisfied, how its own metrics fail, how contributors can be trained to give higher-value feedback, how incentive systems can be made more legitimate, how ranking systems can become more contestable, and how adversarial discovery can be folded back into platform improvement.
+The usual explanation for digital decay is human nature: people are status-seeking, distractible, tribal, impulsive, and easy to manipulate. This explanation contains some truth but is too incomplete to be useful as a design philosophy. The deeper issue is that most platforms do not actually know how to learn from their own failure modes beyond a narrow set of business proxies. They are optimized to survive, grow, and monetize, but not to become increasingly wise about what their users value, how their incentive systems distort behavior, or how their own internal metrics can be gamed.
 
-## 2. The Intended Value: User-Satisfaction as Hyper-Objective
+This paper proposes a different design frame: a platform should be treated as a system that must learn **how to improve how it improves**.
 
-Every platform implicitly optimizes something. The first design question is therefore: what should the platform treat as its intended value?
+That shift matters at every layer of a company.
 
-This paper proposes that the intended value should be **user-satisfaction**, carefully defined. Not shallow pleasantness. Not addictive engagement. Not raw positivity. Not investor confidence. Not monetization by itself. Rather:
+For builders, it means product architecture should support not just features, but learning loops.
+
+For project managers, it means the roadmap should be informed not only by raw feedback or analytics, but by increasingly structured, contestable, and high-value feedback.
+
+For investors, it means product quality can be understood as a compounding capability rather than a static artifact. The strongest products are not just good. They are good at learning why they are not good enough yet.
+
+## 2. The Intended Value: User-Satisfaction
+
+Every platform implicitly optimizes something. The first design question is therefore simple: what should the platform treat as its intended value?
+
+This paper proposes that the right hyper-objective is **user-satisfaction**, carefully defined.
+
+Not shallow pleasantness. Not time spent. Not addictive stickiness. Not investor confidence. Not even revenue by itself.
+
+Rather:
 
 > **User-satisfaction is the degree to which a user, after sufficiently understanding and using the platform for their own goals, would voluntarily endorse continued use with low regret, low felt deficiency, and meaningful belief that the platform serves them well relative to realistic alternatives.**
 
-A clearly defined five-star system can serve as the primary user-facing observable:
+This is the right starting point for three reasons.
 
-- **1 star** — I regret using this app. It failed my needs or made things worse.
-- **2 stars** — There is some value here, but it is frustrating enough that I would avoid using it if I had a reasonable alternative.
-- **3 stars** — It is useful and usable, but clearly incomplete or flawed for my needs.
-- **4 stars** — This app works well for me. I would willingly keep using it, and only minor improvements come to mind.
-- **5 stars** — I literally cannot imagine how this app could be better for what I need right now.
+First, it is closer to the actual purpose of a product than downstream financial abstractions. Revenue measures captured value. User-satisfaction is a stronger indicator that value was provided.
 
-After the user selects a star, the platform asks:
+Second, it is upstream of many desirable business outcomes: stronger retention, lower churn, better word of mouth, more pricing power, better contributor quality, and more stable growth.
+
+Third, it creates a cleaner moral and operational boundary against some of the worst platform pathologies. Engagement can rise through compulsion or outrage. Retention can rise through switching costs. Monetization can rise through extraction. Deep user-satisfaction is harder to fake durably.
+
+This does not mean user-satisfaction should be treated as a perfect single scalar. It should be treated as the intended value and inferred through multiple observables. The most important user-facing observable is a clearly defined five-star system.
+
+### 2.1 A Five-Star System With Real Semantics
+
+- **1 star** - I regret using this app. It failed my needs or made things worse.
+- **2 stars** - There is some value here, but it is frustrating enough that I would avoid using it if I had a reasonable alternative.
+- **3 stars** - It is useful and usable, but clearly incomplete or flawed for my needs.
+- **4 stars** - This app works well for me. I would willingly keep using it, and only minor improvements come to mind.
+- **5 stars** - I literally cannot imagine how this app could be better for what I need right now.
+
+The purpose of this scale is not merely to gather sentiment. It is to help users locate their own experience in a legible way and to make that experience more actionable for the platform.
+
+## 3. The First Flywheel: Hyper-Objective -> User -> Feedback -> Hyper-Objective
+
+A rating alone is too compressed. A freeform feedback box alone is too unconstrained. Put together, they create a usable first loop.
+
+After the user selects a rating, the platform asks:
 
 > **Why did you provide this rating: [clear star description]?**
 
-A rating alone is too compressed. A feedback box alone is too unconstrained. Their conjunction creates the first closed loop:
+This matters because it converts a bounded self-location into causal material. The user is no longer just reacting. They are beginning to articulate why the platform feels the way it does.
+
+This creates the first flywheel:
 
 > **hyper-objective -> user -> feedback -> hyper-objective**
 
-## 3. Incentive Design and the Contributor Ladder
+But most platforms stop here. They gather signal, perhaps label it, perhaps route it into a backlog, and then treat the loop as complete. It is not complete. A platform that wants to improve how it improves must also learn how to identify high-value contributors, how to reward them, how to train them, and how to redesign its own feedback and ranking systems when those systems become brittle.
 
-A major failure of existing feedback systems is that they extract value from users without clearly repaying them. If a user materially improves a platform, then their contribution should be treated as productive labor or co-development, not as free emotional surplus.
+## 4. Contributor Development and Incentive Design
 
-### Layer 1 — Standard users
-Most users provide occasional ratings and optional feedback.
+A major failure of existing feedback systems is that they extract value from users without acknowledging that some of those users are doing real product-improvement work.
 
-### Layer 2 — Access dividend + reflective training
-If a user’s feedback creates material value, the platform can grant an access dividend: a free month, quarter, year, or another bounded platform benefit. Reflective training should **co-occur** with this reward, not precede it. The signal should be:
+If a user materially improves the platform, they should not be treated as free emotional exhaust. They should be treated as contributors.
 
-> Your feedback created meaningful value for the platform, so we are granting you this access dividend. We also want to invest in your continued impact. Here are a few ways your future feedback can become even more useful.
+### 4.1 The Contributor Ladder
 
-### Layer 3 — Mixed compensation
-At higher levels of contribution, the platform must explicitly signal that **cash** is part of the path upward. Platform benefits alone are not enough.
+**Layer 1 - Standard users**  
+Occasional ratings and optional feedback.
 
-### Layer 4 — Structured contribution contracts
-At this stage, users become recognized contributors. They may commit to bounded sprints around specific “matters”: tutorial issues, feature questions, leaderboard concerns, exploit discovery, onboarding failures, or satisfaction bottlenecks.
+**Layer 2 - Access dividend plus reflective training**  
+If a user’s feedback creates meaningful value, the platform grants an access dividend such as a free month or quarter. Reflective training should co-occur with this reward, not precede it. The user should experience the platform as saying: you already created value, we are returning some of it, and we are also helping you increase your future impact.
 
-### Layer 5 — Reputation, leaderboard, and community
-Layer 5 is a contributor-status layer visible only to Layer 4 users. It allows competition, idea sharing, peer learning, firstness recognition, and a proxy for the most valuable users in emerging agentic economies.
+**Layer 3 - Mixed compensation**  
+At higher levels of contribution, the platform must explicitly state that cash is part of the upward path. Platform benefits alone are not enough. Internal rewards are good continuity signals; cash is the reality signal.
 
-## 4. Hyper-Feedback Providers
+**Layer 4 - Structured contribution contracts**  
+At this stage, contributors may commit to bounded periods of work around defined matters: onboarding failures, tutorial confusion, feature questions, leaderboard issues, exploit discovery, or satisfaction bottlenecks.
 
-Some users are not merely engaged users or even strong feedback users. They are **hyper-feedback providers**: contributors whose output is unusually dense, structurally rich, systemically useful, and often meta-level in nature.
+**Layer 5 - Reputation, community, and status**  
+Layer 5 is a contributor-status environment visible only to serious contributors. It allows competition, idea sharing, firstness recognition, and visible status among users who materially improve the platform.
 
-A hyper-feedback provider may:
-- identify hidden assumptions in the rating system
-- distinguish tutorial failure from feature failure
-- notice loopholes in simulated KPIs
-- articulate counterfactual improvements
-- propose new categories of contributor value
-- improve the platform’s ability to train other contributors
-- improve the incentive architecture itself
+### 4.2 Hyper-Feedback Providers
 
-These users belong to a distinct contributor class.
+Some users are not merely good feedback users. They are **hyper-feedback providers**. They surface system-level issues, identify hidden assumptions, distinguish tutorial failure from feature failure, point out metric brittleness, and often improve the feedback system itself.
+
+These users should be treated as a distinct contributor class. More importantly, the platform should not assume that such contributors either exist in finished form or cannot be cultivated. One of the platform’s meta-learning tasks is to develop more of them.
+
+For builders, this creates a richer source of product intelligence.
+
+For PMs, it creates a clearer gradient from raw user noise to high-quality product signal.
+
+For investors, it creates a nontrivial moat: a product that gets better at generating and developing high-value contributors can improve faster and with less epistemic waste than competitors.
 
 ## 5. Leaderboards as Governed Objects
 
-The leaderboard is not merely a status display. It is itself part of the learning system.
+The moment a contributor class exists, the platform has another design problem: how to rank or recognize contributors without collapsing into a bad status game.
 
-Contributors should be able to say:
+The answer is not to avoid leaderboards entirely. The answer is to treat leaderboards as **governed objects**.
+
+A serious contributor should be able to say:
 
 > I have a problem with the leaderboard. It fails because of this. I have noticed it explicitly here and implicitly here.
 
-This creates a second flywheel:
+This creates the second flywheel:
 
 > **leaderboard -> contributor reaction -> leaderboard critique -> leaderboard redesign -> better leaderboard**
 
-A pure single-number throne is inadequate. A scalar can be helpful ceremonially for firstness or particular phase-transition events, but not as a total ontology of contributor value. The leaderboard must remain a rich reputation surface.
+A single-number throne is too weak to describe ongoing contributor value. But ceremonial firstness still matters. Threshold-crossing events deserve memory. The first person to surface a new exploit class or a new contributor role deserves a kind of recognition that should not be flattened into a rolling score.
 
-## 6. Goodhart and Higher-Order Critique
+## 6. Goodhart, Glitches, and Why Speedrunning Matters
 
-Any proxy system invites gaming. The first defense is to use multiple orthogonal simulated KPIs rather than one. A single KPI leaves too many free degrees of freedom. A bundle of independent constraints narrows the escape routes.
+Every proxy system invites gaming. Multiple orthogonal KPIs help, but they do not solve the problem completely. A sufficiently clever optimizer can still satisfy a bundle of metrics while drifting away from the intended value.
 
-However, multi-KPI systems are not enough. Clever optimizers can still satisfy the bundle while decoupling from the intended value. Therefore the platform must include higher-order critique: users and tools that search specifically for loopholes in the scoring and incentive regimes themselves.
+This is where the speedrunning analogy becomes unusually useful.
 
-## 7. Why Speedrunning Matters
+Long-running speedrunning communities survive because they know how to metabolize breakage. A newly discovered exploit does not automatically destroy the scene. It often produces:
 
-The speedrunning community is resilient not because it avoids breakage, but because it metabolizes breakage. Long-running frontier games, such as *Super Mario 64*, show how category debates, glitch discovery, route revisions, verification cultures, and tool-assisted explorations can strengthen a scene rather than destroy it.
+- new categories
+- new routing strategies
+- new norms of verification
+- new distinctions between lawful and exploitative runs
+- new prestige for discovery, not only execution
 
-What makes this culture durable is not one perfect leaderboard. It is an evolving ecology that can absorb new discoveries without collapsing. A newly found glitch does not destroy the scene. It often causes the scene to split, reclassify, reroute, and deepen.
+That is what makes the analogy so powerful for platform design. A healthy system is not one that never breaks. It is one that can absorb breakage and become more structurally intelligent because of it.
 
-This is exactly what most digital platforms lack.
+This is relevant to builders because it changes how edge cases are treated. It is relevant to PMs because it changes how failure reports become product insight rather than support burden. It is relevant to investors because it reframes resilience: the best products are not just hard to break; they are good at learning from how they break.
 
-## 8. A Four-Part Hypertopology of Learning
+## 7. The Final Missing Piece: A Four-Part Hypertopology of Learning
 
-The final conceptual piece distinguishes two axes:
+The platform should distinguish two axes:
+
 - **Compliant vs Adversarial**
 - **Human vs Tool**
 
-This yields four learning regimes:
+This yields four learning regimes.
 
 ### Human-Compliant
-Ordinary lawful human use. Reveals real satisfaction, real friction, real usability, and realistic tutorial performance.
+Ordinary lawful human use. This reveals real satisfaction, real friction, realistic onboarding performance, and the lived experience of the intended product.
 
 ### Human-Adversarial
-Human glitch-hunting. Reveals loopholes humans can actually reach, leaderboard failures, prompt manipulations, and incentive exploits.
+Human glitch-hunting. This reveals loopholes, prompt failures, ranking exploits, and incentive distortions that real people can actually reach.
 
 ### Tool-Compliant
-Tool-assisted lawful search. Reveals best-known compliant strategies, efficiency ceilings, and where humans are far from the lawful frontier.
+Tool-assisted lawful search. This reveals best-known compliant strategies, lawful upper bounds, and where current human usage sits far below the product’s legitimate frontier.
 
 ### Tool-Adversarial
-Tool-assisted exploit discovery. Reveals latent exploit classes, proxy-breaks, hidden rule interactions, and category-collapse risks.
+Tool-assisted exploit discovery. This reveals latent exploit classes, proxy-breaks, hidden rule interactions, and failure surfaces humans may never naturally discover even though the system technically permits them.
 
-### Why this is a hypertopology rather than a mere matrix
-The value is not only in the four quadrants. It is in the transitions among them. Tool-Adversarial can discover an exploit that Human-Adversarial later reproduces. Human-Adversarial can force a redesign that improves Human-Compliant experience. Tool-Compliant can discover a lawful upper bound that informs better tutorials for Human-Compliant users.
+### Why this is not merely a matrix
 
-The platform learns not only from states, but from paths through these states.
+The value is not only in the four boxes. It is in the transitions among them.
 
-## 9. Toward Speedrunning Social Development
+Tool-Adversarial can find an exploit that Human-Adversarial later reproduces. Human-Adversarial can force a redesign that improves Human-Compliant experience. Tool-Compliant can discover a lawful optimum that later informs better tutorials, defaults, or workflows.
 
-Putting the architecture together, a platform should:
+The platform therefore learns not only from states, but from paths across those states. That is why this is a **hypertopology of learning**, not merely a 2x2 diagram.
 
-1. Treat user-satisfaction as the intended value.
-2. Gather structured ratings and causal feedback.
-3. Reward meaningful contributors with access dividends, reflective training, cash pathways, and structured contracts.
-4. Cultivate hyper-feedback providers rather than assuming they simply appear.
-5. Treat leaderboards as governed objects subject to critique.
-6. Use multi-dimensional contributor ranking with ceremonial firstness markers.
-7. Create glitch-hunting and category-splitting subcultures rather than suppressing them.
-8. Distinguish Human-Compliant, Human-Adversarial, Tool-Compliant, and Tool-Adversarial learning regimes.
-9. Learn from transitions across this hypertopology.
-10. Recursively improve how it improves.
+For builders, this gives a fuller search surface.
 
-## 10. Conclusion
+For PMs, it clarifies which kinds of findings should affect roadmap, policy, tutorials, ranking, or incentive design.
 
-The digital infrastructure of modern life is not doomed to remain corrupt, manipulative, or shallow. Its failure is not only a mirror of human weakness. It is also a failure of systems that do not know how to improve themselves at the level of metrics, incentives, contributor development, ranking legitimacy, and adversarial discovery.
+For investors, it describes a company that is not merely collecting analytics but building a higher-order capability for product discovery and self-correction.
 
-Platforms should not only ask whether users are satisfied. They should build formal architectures through which satisfaction, feedback, contributor development, incentive design, ranking critique, glitch-hunting, and tool-assisted search all participate in a shared meta-improvement process.
+## 8. Why This Matters Across the Stack
 
-To improve human lives, we must improve the social experiences through which human lives increasingly unfold. To improve those experiences, we must improve the systems that shape them. And to improve those systems, we must improve how they improve.
+This framework is not only a philosophical proposal. It has different practical meanings for different layers of product and capital formation.
 
-That is the central thesis of Speedrunning Social Development.
+### For builders
+Build systems that do not just ship features. Build systems that learn from failure, criticism, adversarial discovery, and tool-assisted search.
+
+### For project managers
+Do not reduce product intelligence to analytics dashboards and unstructured user comments. Build a path from user-satisfaction to structured feedback to contributor development to roadmap quality.
+
+### For venture capitalists and capital allocators
+A company with a stronger meta-improvement loop is not merely a company with a better product today. It is a company with a better mechanism for finding tomorrow’s product truth faster, with less internal fiction and less proxy blindness. That should matter to diligence.
+
+## 9. Conclusion
+
+Digital infrastructure is not failing only because humans are flawed. It is failing because most platforms were not designed to become wiser about their own failure modes.
+
+The next generation of products should not merely optimize features. They should optimize the systems by which features are criticized, repaired, re-ranked, retaught, and re-understood. They should treat user-satisfaction as the intended value, cultivate contributors instead of extracting from them, make ranking systems contestable, and build formal pathways for glitch-hunting and tool-assisted discovery.
+
+The deepest lesson from speedrunning is not speed. It is social resilience under discovery. A healthy community does not fall apart when someone finds a break in the rules. It becomes more sophisticated.
+
+That is the core claim of this paper.
+
+To improve human lives, we need better social experiences. To build better social experiences, we need better digital systems. And to build better digital systems, we need systems that improve how they improve.
