@@ -34,9 +34,9 @@
 \begin{abstract}
 Digital platforms shape an increasing share of human social development: how people communicate, learn, coordinate, create, belong, and build identity. Yet most platforms are still optimized through blunt proxies such as engagement, retention, conversion, and monetization. Those metrics can be useful, but they do not reliably tell a platform how to become better at becoming better. They help a system extract value. They do not necessarily help it learn.
 
-This paper proposes a framework for \textbf{meta-improvement} of digital products and digital social infrastructure. The core claim is that platforms should not only optimize user-facing experiences; they should also optimize the mechanisms by which they discover failure, absorb criticism, reward valuable contributors, and redesign their own metrics and ranking systems. The framework combines a user-satisfaction hyper-objective, structured rating-plus-feedback loops, layered contributor incentives, leaderboard critique, glitch-hunting subcultures, and a four-part hypertopology of learning: \textbf{Human-Compliant, Human-Adversarial, Tool-Compliant, and Tool-Adversarial}.
+This paper presents a \textbf{paradigm-shifting conceptual framework} for the meta-improvement of digital products and digital social infrastructure. The core claim is that platforms should not only optimize user-facing experiences; they should also optimize the mechanisms by which they discover failure, absorb criticism, reward valuable contributors, and redesign their own metrics and ranking systems. The framework combines a user-satisfaction hyper-objective, structured rating-plus-feedback loops, layered contributor incentives, leaderboard critique, glitch-hunting subcultures, and a four-part hypertopology of learning: \textbf{Human-Compliant, Human-Adversarial, Tool-Compliant, and Tool-Adversarial}.
 
-The comparison point is speedrunning. Long-lived speedrunning communities are resilient because they know how to metabolize breakage. A new exploit does not automatically destroy the scene. It often creates new categories, new routes, new verification norms, and deeper collective understanding. This paper argues that digital platforms should do the same. For builders, this means more robust product learning. For project managers, it means a cleaner loop from user signal to roadmap decisions. For investors, it means a stronger theory of compounding product quality and lower epistemic risk in product development.
+The comparison point is speedrunning. Long-lived speedrunning communities are resilient because they know how to metabolize breakage. A new exploit does not automatically destroy the scene. It often creates new categories, new routes, new verification norms, and deeper collective understanding. This paper argues that digital platforms should do the same. For builders, this means more robust product learning. For project managers, it means a cleaner loop from user signal to roadmap decisions. For investors, it means a stronger theory of compounding product quality and better investment judgment through lower dependence on internal fiction and proxy blindness.
 \end{abstract}
 
 \section{Introduction}
@@ -47,13 +47,13 @@ If these environments are optimized badly, millions of people experience shallow
 
 The usual explanation for digital decay is human nature: people are status-seeking, distractible, tribal, impulsive, and easy to manipulate. This explanation contains some truth but is too incomplete to be useful as a design philosophy. The deeper issue is that most platforms do not actually know how to learn from their own failure modes beyond a narrow set of business proxies. They are optimized to survive, grow, and monetize, but not to become increasingly wise about what their users value, how their incentive systems distort behavior, or how their own internal metrics can be gamed.
 
-This paper proposes a different design frame: a platform should be treated as a system that must learn \textbf{how to improve how it improves}.
+This paper proposes a different design frame: a platform should be treated as a system that must learn \textbf{how to improve how it improves}. It is offered as a paradigm-shifting conceptual framework rather than as a conventional empirical paper. Its goal is not to bury the reader in exhaustive measurement before the design space is visible. Its goal is to formalize a stronger design target first, then make empirical testing easier to structure later.
 
 That shift matters at every layer of a company.
 
 For builders, it means product architecture should support not just features, but learning loops.
 
-For project managers, it means the roadmap should be informed not only by raw feedback or analytics, but by increasingly structured, contestable, and high-value feedback.
+For project managers, it means the roadmap should be informed not only by raw feedback or analytics, but by increasingly structured, contestable, and high-value feedback. It also reduces \textbf{internal fiction}: internal metrics, narratives, or coordination stories that help the company cohere but do not reliably track user-valued improvement.
 
 For investors, it means product quality can be understood as a compounding capability rather than a static artifact. The strongest products are not just good. They are good at learning why they are not good enough yet.
 
@@ -73,7 +73,7 @@ For investors, it means product quality can be understood as a compounding capab
 
 Every platform implicitly optimizes something. The first design question is therefore simple: what should the platform treat as its intended value?
 
-This paper proposes that the right hyper-objective is \textbf{user-satisfaction}, carefully defined.
+This paper proposes that the right hyper-objective is \textbf{user-satisfaction}, carefully defined. This choice is adjacent to long-running work in usability, user experience, experimentation, and optimization, but it is not identical to any one of those traditions. It is a proposal about what the platform should ultimately be trying to learn, not merely what it should measure most often.
 
 Not shallow pleasantness. Not time spent. Not addictive stickiness. Not investor confidence. Not even revenue by itself.
 
@@ -156,7 +156,7 @@ These users should be treated as a distinct contributor class. More importantly,
 
 For builders, this creates a richer source of product intelligence.
 
-For PMs, it creates a clearer gradient from raw user noise to high-quality product signal.
+For PMs, it creates a clearer gradient from raw user noise to high-quality product signal, while reducing the gap between dashboard belief and lived user reality.
 
 For investors, it creates a nontrivial moat: a product that gets better at generating and developing high-value contributors can improve faster and with less internal fiction than competitors.
 
@@ -182,7 +182,7 @@ A single-number throne is too weak to describe ongoing contributor value. But ce
 
 \section{Goodhart, Glitches, and Why Speedrunning Matters}
 
-Every proxy system invites gaming. Multiple orthogonal KPIs help, but they do not solve the problem completely. A sufficiently clever optimizer can still satisfy a bundle of metrics while drifting away from the intended value.
+Every proxy system invites gaming. Multiple orthogonal KPIs help, but they do not solve the problem completely. A sufficiently clever optimizer can still satisfy a bundle of metrics while drifting away from the intended value. This family of failure modes is well described by adjacent work on proxy optimization, target distortion, and institutional measurement pathologies.
 
 This is where the speedrunning analogy becomes unusually useful.
 
@@ -255,7 +255,15 @@ Do not reduce product intelligence to analytics dashboards and unstructured user
 
 \subsection{For venture capitalists and capital allocators}
 
-A company with a stronger meta-improvement loop is not merely a company with a better product today. It is a company with a better mechanism for finding tomorrow’s product truth faster, with less internal fiction and less proxy blindness. That should matter to diligence.
+A company with a stronger meta-improvement loop is not merely a company with a better product today. It is a company with a better mechanism for finding tomorrow’s product truth faster, with less internal fiction and less proxy blindness. That should matter to diligence and ultimately to investment judgment.
+
+\section{Positioning and Adjacent Literature}
+
+This paper is intentionally framework-first. It does not claim that the design space described here already has a complete empirical literature under one shared name. Rather, it argues that multiple adjacent literatures point toward the need for a stronger synthesis.
+
+The critique of proxy optimization and target distortion is adjacent to Goodhart's and Campbell's law. The emphasis on experimentation and structured learning is adjacent to work on online controlled experiments and business experimentation. The user-satisfaction framing is adjacent to usability and user experience research, but it is here elevated from a measurement concern to an intended-value concern. The Human/Tool x Compliant/Adversarial hypertopology is adjacent to adversarial testing, red teaming, reward learning, and the broader problem of aligning system optimization with what humans actually value. The speedrunning comparison is adjacent to broader work on how rule systems, player communities, exploits, and interpretation co-evolve over time.
+
+The contribution claimed here is therefore not that every component is unprecedented in isolation. The contribution is a new synthesis: a paradigm-shifting conceptual framework for building digital systems that improve how they improve.
 
 \section{Conclusion}
 
@@ -268,5 +276,22 @@ The deepest lesson from speedrunning is not speed. It is social resilience under
 That is the core claim of this paper.
 
 To improve human lives, we need better social experiences. To build better social experiences, we need better digital systems. And to build better digital systems, we need systems that improve how they improve.
+
+\section*{References}
+
+\begin{enumerate}
+  \item Amodei, Dario, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, and Dan Man\'e. 2016. \textit{Concrete Problems in AI Safety}. arXiv:1606.06565.
+  \item Campbell, Donald T. 1976. \textit{Assessing the Impact of Planned Social Change}. The Public Affairs Center, Dartmouth College.
+  \item Christiano, Paul F., Jan Leike, Tom Brown, Miljan Martic, Shane Legg, and Dario Amodei. 2017. \textit{Deep Reinforcement Learning from Human Preferences}. In \textit{Advances in Neural Information Processing Systems 30}.
+  \item Consalvo, Mia. 2007. \textit{Cheating: Gaining Advantage in Videogames}. MIT Press.
+  \item Goodhart, Charles A. E. 1975. \textit{Problems of Monetary Management: The U.K. Experience}. In \textit{Papers in Monetary Economics}, Reserve Bank of Australia.
+  \item Hassenzahl, Marc, and Noam Tractinsky. 2006. \textit{User Experience - A Research Agenda}. \textit{Behaviour \& Information Technology} 25(2): 91-97.
+  \item Kohavi, Ron, Diane Tang, and Ya Xu. 2020. \textit{Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing}. Cambridge University Press.
+  \item Newman, James. 2008. \textit{Playing with Videogames}. Routledge.
+  \item Nielsen, Jakob. 1994. \textit{Usability Engineering}. Morgan Kaufmann.
+  \item Salen, Katie, and Eric Zimmerman. 2003. \textit{Rules of Play: Game Design Fundamentals}. MIT Press.
+  \item Sutton, Richard. 2019. \textit{The Bitter Lesson}. Available at \url{http://www.incompleteideas.net/IncIdeas/BitterLesson.html}.
+  \item Thomke, Stefan. 2020. \textit{Experimentation Works: The Surprising Power of Business Experiments}. Harvard Business Review Press.
+\end{enumerate}
 
 \end{document}
