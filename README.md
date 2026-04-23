@@ -1,5 +1,7 @@
 # Speedrunning Social Development
 
+[![DOI](https://zenodo.org/badge/1217712847.svg)](https://doi.org/10.5281/zenodo.19702347)
+
 Paper repository for **Speedrunning Social Development: How We Can Improve How We Improve**.
 
 ## Core claim
@@ -42,11 +44,12 @@ This repo is **TeX-first**:
 
 - bibliography tightened and standardized
 - canonical comparison figure included in the paper workflow
-- release PDF ready for tagging and DOI minting
+- release PDF frozen for `v0.1.0`
+- Zenodo DOI minted: `10.5281/zenodo.19702347`
 
 ## Suggested next steps
 
-1. Create the `v0.1.0` GitHub release.
-2. Attach the frozen PDF to the release.
-3. Let Zenodo mint the DOI from that release.
-4. Post the paper publicly and invite hard critique.
+1. Make sure the `v0.1.0` GitHub release includes the frozen PDF.
+2. Add the DOI link to the GitHub release body if desired.
+3. Post the paper publicly and invite hard critique.
+4. Use later versions for refinements, pilots, and empirical follow-through.
