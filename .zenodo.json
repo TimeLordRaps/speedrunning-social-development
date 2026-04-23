@@ -7,7 +7,7 @@
       "orcid": ""
     }
   ],
-  "description": "Paper draft and release scaffold for Speedrunning Social Development: How We Can Improve How We Improve.",
+  "description": "Speedrunning Social Development: How We Can Improve How We Improve presents a paradigm-shifting conceptual framework for improving how digital systems improve. Rather than optimizing only user-facing features through blunt proxies such as engagement, retention, and monetization, the paper argues that platforms should optimize the mechanisms by which they discover failure, absorb criticism, reward contributors, redesign their metrics, and learn from both compliant and adversarial use. The framework centers user-satisfaction as the intended value, develops a layered model of contributor incentives and compensation, formalizes leaderboard feedback flywheels, treats glitch-hunting as a product-learning asset, and introduces a Human/Tool x Compliant/Adversarial hypertopology of learning. This release contains the canonical LaTeX source, figure asset, and frozen release PDF.",
   "license": "Apache-2.0",
   "keywords": [
     "platform design",
@@ -16,7 +16,10 @@
     "incentive design",
     "meta-improvement",
     "leaderboard design",
-    "social development"
+    "social development",
+    "product development",
+    "experimentation",
+    "human-computer interaction"
   ],
   "upload_type": "publication",
   "publication_type": "article"
