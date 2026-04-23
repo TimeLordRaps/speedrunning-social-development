@@ -23,23 +23,30 @@ This repo proposes a framework for meta-improvement of digital platforms through
 ## Files
 
 - `paper.tex` - primary LaTeX source for the paper
-- `REQUEST_FOR_CRITIQUE.md` - the strongest questions to attack
+- `REQUEST_FOR_CRITIQUE.md` - strongest questions to attack
 - `CITATION.cff` - GitHub citation metadata
 - `.zenodo.json` - Zenodo metadata scaffold
+- `RELEASE_NOTES.md` - release-facing summary text
 - `LICENSE` - Apache License 2.0
 
 ## Workflow
 
-This repo is now **TeX-first**:
+This repo is **TeX-first**:
 
 1. maintain the canonical paper source in `paper.tex`
 2. compile the PDF from `paper.tex`
-3. tag a GitHub release for Zenodo DOI minting
-4. keep the repo arXiv-friendly by treating TeX as the publication source of truth
+3. freeze a release PDF when ready for publication
+4. tag a GitHub release for Zenodo DOI minting
+
+## Current release state
+
+- bibliography tightened and standardized
+- canonical comparison figure included in the paper workflow
+- release PDF ready for tagging and DOI minting
 
 ## Suggested next steps
 
-1. Compile `paper.tex` to the canonical PDF.
-2. Add one diagram for the Human/Tool x Compliant/Adversarial hypertopology.
-3. Create a tagged release for Zenodo DOI minting.
-4. Post with the actual paper title and invite hard critique.
+1. Create the `v0.1.0` GitHub release.
+2. Attach the frozen PDF to the release.
+3. Let Zenodo mint the DOI from that release.
+4. Post the paper publicly and invite hard critique.
