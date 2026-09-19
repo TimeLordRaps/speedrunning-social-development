@@ -1,6 +1,8 @@
 # Speedrunning Social Development
 
-[![DOI](https://zenodo.org/badge/1217712847.svg)](https://doi.org/10.5281/zenodo.19702347)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19702347.svg)](https://doi.org/10.5281/zenodo.19702347)
+[![Release](https://img.shields.io/github/v/release/TimeLordRaps/speedrunning-social-development)](https://github.com/TimeLordRaps/speedrunning-social-development/releases/latest)
+[![PDF](https://img.shields.io/badge/PDF-download-red.svg)](https://github.com/TimeLordRaps/speedrunning-social-development/releases/download/v0.1.0/speedrunning-social-development-v0.1.0.pdf)
 
 Paper repository for **Speedrunning Social Development: How We Can Improve How We Improve**.
 
@@ -44,7 +46,7 @@ This repo is **TeX-first**:
 
 - bibliography tightened and standardized
 - canonical comparison figure included in the paper workflow
-- release PDF frozen for `v0.1.0`
+- release PDF frozen for `v0.1.0` and distributed via [GitHub Releases](https://github.com/TimeLordRaps/speedrunning-social-development/releases/tag/v0.1.0)
 - Zenodo DOI minted: `10.5281/zenodo.19702347`
 
 ## Suggested next steps
