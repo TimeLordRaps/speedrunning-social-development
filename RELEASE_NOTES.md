@@ -1,5 +1,24 @@
 # Release Notes
 
+## v0.2.0
+
+Second public release of **Speedrunning Social Development: How We Can Improve How We Improve** (Version 0.2).
+
+This release significantly expands the manuscript to 16 pages (+185 lines of formal exposition), adding:
+- Trajectory learning, feedback user training, and formal oracle structures
+- Asymmetric actor classes and moral profitability regimes
+- Self-balancing visibility mechanisms and proxy-governance sections
+- Concrete operationalization connecting the speedrunning meta-improvement framework to **Claim Garden** (`https://claimgarden.com`) and the Verifier Standard (VSTD) architecture
+- Cleaned LaTeX source and official Zenodo badge integration
+
+### Included in this release
+
+- canonical paper source in `paper.tex` (v0.2)
+- canonical comparison figure in `figures/traditional_vs_speedrunning_development_approaches.png`
+- frozen release PDF (`speedrunning-social-development-v0.2.0.pdf`)
+- citation metadata in `CITATION.cff` (v0.2.0)
+- Zenodo metadata scaffold in `.zenodo.json`
+
 ## v0.1.0
 
 First public release of **Speedrunning Social Development: How We Can Improve How We Improve**.
